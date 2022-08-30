@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	*{
+		list-style: none;
+	}
+	header{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	.flex{
+		display: flex; 
+	}
+	.inlineBlock{
+		display: inline-block;
+	}
+	.logo{
+		width: 260px;
+		position: relative;
+	    top: 25px;
+	    margin-right: 60px;
+	}
+	
+	.mainMenu{
+		display: inline-block;
+	}
+	.mainMenu ul li:first-child{
+		position: relative;
+	}
+	.mainMenu ul li span:first-child{
+		margin-right: 40px;
+		cursor: pointer;
+	}
+	.subTitle:hover + .subMenu{
+		display: flex;
+	}
+	.subMenu:hover {
+		display: flex;
+	}
+	.subMenu{
+		display: none;
+		position: absolute;
+		border: 1px solid black;
+		padding: 0;
+	}
+	.subMenu li{
+		width: 200px;
+		border-right: 1px solid #ddd;
+		padding-left: 15px;
+	}
+	.subMenu li p{
+		cursor: pointer;
+	}
+	.loginBox{
+	    position: relative;
+  	 	bottom: 40px;
+    	right: 160px;
+	}
+	.loginBox span{
+	    color: #7c8082;
+	    font-size: 11px;
+	}
+	.loginBox span:first-child:after {
+		content: "|";
+	}
+</style>
+</head>
+<header>
+	<img class="logo" src="baekjoon.png">
+	<div class="mainMenu">
+		<ul class="flex">
+			<li>
+				<span class="subTitle">문제</span>
+				<ol class="subMenu">
+					<li>
+						<strong>문제</strong><br>
+						<p>전체 문제</p>
+						<p>문제 출처</p>
+						<p>단계별로 풀어보기</p>
+						<p>알고리즘 분류</p>
+						<p>추가된 문제</p>
+						<p>문제 순위</p>
+					</li>
+					<li>
+						<strong>문제</strong><br>
+						<p>푼 사람이 한 명인 문제</p>
+						<p>아무도 못 푼 문제</p>
+						<p>최근 제출된 문제</p>
+						<p>최근 풀린 문제</p>
+						<p>랜덤</p>
+					</li>
+					<li>
+						<strong>출처</strong><br>
+						<p>ICPC</p>
+						<p>Olympiad</p>
+						<p>한국정보올림피아드</p>
+						<p>대학교 대회</p>
+						<p>카카오 코드 페스티벌</p>
+						<p>Coder's High</p>
+					</li>
+					<li>
+						<strong>ICPC</strong><br>
+						<p>ICPC</p>
+						<p>Olympiad</p>
+						<p>한국정보올림피아드</p>
+						<p>대학교 대회</p>
+						<p>카카오 코드 페스티벌</p>
+						<p>Coder's High</p>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<span>문제집</span>
+			</li>
+			<li>
+				<span>대회</span>
+			</li>
+			<li>
+				<span>채점 현황</span>
+			</li>
+			<li>
+				<span>랭킹</span>
+			</li>
+			<li>
+				<span>게시판</span>
+			</li>
+		</ul>
+	</div>
+	<div class="loginBox inlineBlock">
+		<span>회원가입 </span>
+		<span> 로그인</span>
+	</div>	
+</header>
+</html>

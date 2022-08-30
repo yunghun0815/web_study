@@ -1,0 +1,6 @@
+@charset "UTF-8";
+section{
+		color: red;
+		column-count: 3;
+		background-color: white;
+}

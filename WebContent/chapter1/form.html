@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>입력양식</title>
+<link rel="stylesheet" type="text/css" href="NewFile.css">
+
+</head>
+<style>
+body{
+font-family: "Bauhaus 93" ;
+}
+	ul li:first-child {
+		font-size: 30px;
+	}
+	ul, ol, li{
+		list-style: none;
+	}
+	#test{
+		color:red;
+	}
+</style>
+<body>
+	<h1>입력 양식 예</h1>
+	<form class="black" method="get" enctype="multipart/form-data">
+		<fieldset id="field" style="color: blue">
+			<legend class="legend">로그인</legend>
+			<label for="id">이름 : </label><input id="id" type="text"><br>
+			<label class="black" for="password">비번 : </label><input id="password" type="password"><br>
+			이메일 : <input type="email"><br>
+			전화번호 : <input type = "tel"><br>
+			(radio)좋아하는 과일 : <input type="radio" name ="fruits" value="포도">포도
+			<input type="radio" name ="fruits" value="사과">사과
+			<input type="radio" name ="fruits" value="수박">수박<br>
+			(checkbox)좋아하는 과일 : <input type="checkbox" name ="fruits2" value ="포도">포도		
+			<input type="checkbox" name ="fruits2" value ="사과">	사과
+			<input type="checkbox" name ="fruits2" value ="수박">	수박
+			<input type="file">	
+			<input type="submit">
+		</fieldset>
+	</form>
+	<div style="height: 200px"></div>
+	<ul>
+		<li id = "test">asd</li>
+		<li>zxc</li>
+		<li>dd</li>
+		<li>qwe</li>
+		<li>e</li>
+	</ul>
+</body>
+</html>

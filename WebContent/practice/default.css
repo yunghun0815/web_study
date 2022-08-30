@@ -1,0 +1,7 @@
+@charset "UTF-8";
+@import url("device1024.css") only screen and (min-width:1024px);
+
+*{
+	color: yellow;
+	background-color: orange;
+}
